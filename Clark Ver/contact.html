@@ -11,12 +11,11 @@
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="donias-logo.png" alt="Donia's Events logo" class="logo-img">
-                <span>Donia's Events</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="menu-packages.html">Menu & Packages</a></li>
                 <li><a href="styling.html">Styling</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="booking.html" class="btn-book">Book Now</a></li>
@@ -25,16 +24,82 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Contact Us</h1>
-                <p>Get in Touch with Our Team</p>
+        <!-- Large Banner Image -->
+        <section class="section" style="padding-top: 2rem;">
+            <div class="container">
+                <div class="hero-visual reveal-item" style="min-height: 500px; border-radius: 40px; background: url('contact-banner.jpg') center/cover; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="section">
+            <div class="container">
+                <div class="page-header text-center">
+                    <p class="eyebrow">Get in Touch</p>
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>Whether you're ready to book or just exploring your options, our team is here to answer your questions and start planning your special day.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="package-grid" style="margin-top: 3rem;">
+                    <!-- Visit Us Card -->
+                    <div class="package-card" style="padding: 3rem 2rem; align-items: center; text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">Visit Us</h3>
+                        <p style="color: var(--text-dark); font-weight: 500; margin-bottom: 0.25rem;">Donia's Events Studio</p>
+                        <p style="color: var(--text-muted);">123 Celebration Avenue<br>Creative District, City 1000</p>
+                    </div>
+
+                    <!-- Call/Email Card -->
+                    <div class="package-card" style="padding: 3rem 2rem; align-items: center; text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">Contact Us</h3>
+                        <p style="color: var(--text-dark); font-weight: 500; margin-bottom: 0.25rem;">Phone</p>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">+63 (555) 123-4567</p>
+                        <p style="color: var(--text-dark); font-weight: 500; margin-bottom: 0.25rem;">Email</p>
+                        <p style="color: var(--text-muted);">hello@donias.com</p>
+                    </div>
+
+                    <!-- Socials Card -->
+                    <div class="package-card" style="padding: 3rem 2rem; align-items: center; text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">Follow Us</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Stay updated with our latest designs:</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                            <a href="#" style="color: var(--text-dark); font-weight: 700; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-dark)'">Facebook</a>
+                            <a href="#" style="color: var(--text-dark); font-weight: 700; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-dark)'">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <div class="cta-box">
+                        <h3 style="color: white;">Ready to start planning?</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Head over to our booking page to reserve your date.</p>
+                        <a href="booking.html" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Donia's Events. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>🍽️ Donia's Events</h4>
+                <p>Creating beautiful events with elegant styling and delicious catering since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu-packages.html">Menu & Packages</a></li>
+                    <li><a href="styling.html">Styling</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donia's Events. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

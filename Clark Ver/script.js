@@ -3,7 +3,15 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const pageKey = currentPage === 'styling-gallery.html' || currentPage === 'styling-packages.html' ? 'styling.html' : currentPage;
+    
+    let pageKey = currentPage;
+    // Map subpages to their main navbar category
+    if (currentPage === 'styling-gallery.html' || currentPage === 'styling-packages.html') {
+        pageKey = 'styling.html';
+    } else if (currentPage === 'alacarte.html') {
+        pageKey = 'menu-packages.html';
+    }
+    
     const navLinks = document.querySelectorAll('.nav-menu a');
 
     navLinks.forEach(link => {

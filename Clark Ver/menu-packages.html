@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Packages - Donia's Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="donias-logo.png" alt="Donia's Events logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu-packages.html" class="active">Menu & Packages</a></li>
+                <li><a href="styling.html">Styling</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="section hero-panel">
+            <div class="container hero-panel-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Catering Excellence</p>
+                    <h1>Curated Menus for Unforgettable Celebrations</h1>
+                    <p class="hero-text">Delight your guests with our expertly crafted catering packages, featuring elegant courses, rich flavors, and impeccable presentation suited for any event.</p>
+                </div>
+
+                <div class="hero-visual reveal-item">
+                    <!-- Uses your existing styling arch layout with a catering image -->
+                    <div class="hero-slider" style="background: url('menu-collection.jpg') center/cover; border-radius: 200px 200px 0 0;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATERING FOOD GALLERY -->
+        <section class="section page-intro" style="margin-top: 2rem;">
+            <div class="container">
+                <div class="page-header text-center">
+                    <p class="eyebrow">A Taste of Excellence</p>
+                    <h2>Culinary Creations</h2>
+                    <p>Feast your eyes on some of our signature dishes and beautifully plated catering options.</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="photo-grid">
+                    <article class="photo-card">
+                        <div class="photo-swatch" style="background: url('food-gallery-1.jpg') center/cover;"></div>
+                        <span class="text-center">Elegant Plating</span>
+                    </article>
+                    <article class="photo-card">
+                        <div class="photo-swatch" style="background: url('food-gallery-2.jpg') center/cover;"></div>
+                        <span class="text-center">Premium Carving Stations</span>
+                    </article>
+                    <article class="photo-card">
+                        <div class="photo-swatch" style="background: url('food-gallery-3.jpg') center/cover;"></div>
+                        <span class="text-center">Artisan Desserts</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU TIERS GRID -->
+        <section class="section packages-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="eyebrow">Menu Tiers</p>
+                    <h2>Catering Menu Packages</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="package-grid">
+                    <!-- Silver Package -->
+                    <div class="package-card">
+                        <span class="package-badge">Classic</span>
+                        <h3>Silver Menu</h3>
+                        <div class="menu-price">₱850 / pax</div>
+                        <div style="text-align: left; width: 100%;">
+                            <div class="menu-course">Appetizer</div>
+                            <div class="menu-item">Truffle Mushroom Bruschetta</div>
+                            <div class="menu-course">Main Course (Choose 2)</div>
+                            <div class="menu-item">Roasted Herb Chicken</div>
+                            <div class="menu-item">Beef Salpicao with Garlic</div>
+                            <div class="menu-item">Pan-Seared Fish Fillet</div>
+                            <div class="menu-course">Dessert</div>
+                            <div class="menu-item">Classic Panna Cotta</div>
+                            <div class="menu-course">Includes</div>
+                            <div class="menu-item">Steamed Rice & Iced Tea</div>
+                        </div>
+                        <a href="booking.html" class="btn btn-secondary" style="margin-top: auto;">Select Menu</a>
+                    </div>
+
+                    <!-- Gold Package (Highlighted Bestseller) -->
+                    <div class="package-card package-premium">
+                        <span class="package-badge" style="background: var(--primary-color); color: white;">Bestseller</span>
+                        <h3>Gold Menu</h3>
+                        <div class="menu-price">₱1,200 / pax</div>
+                        <div style="text-align: left; width: 100%;">
+                            <div class="menu-course">Appetizers (Choose 2)</div>
+                            <div class="menu-item">Shrimp Cocktail</div>
+                            <div class="menu-item">Spinach & Cheese Tartlets</div>
+                            <div class="menu-course">Main Course (Choose 3)</div>
+                            <div class="menu-item">Slow-Roasted Beef Carving</div>
+                            <div class="menu-item">Grilled Salmon in Lemon Butter</div>
+                            <div class="menu-item">Chicken Cordon Bleu</div>
+                            <div class="menu-course">Dessert</div>
+                            <div class="menu-item">Cheesecake & Chocolate Lava</div>
+                            <div class="menu-course">Includes</div>
+                            <div class="menu-item">Signature Drinks & Rice Pilaf</div>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary" style="margin-top: auto;">Select Menu</a>
+                    </div>
+
+                    <!-- Platinum Package -->
+                    <div class="package-card">
+                        <span class="package-badge">Luxury</span>
+                        <h3>Platinum Menu</h3>
+                        <div class="menu-price">₱1,800 / pax</div>
+                        <div style="text-align: left; width: 100%;">
+                            <div class="menu-course">Premium Starters</div>
+                            <div class="menu-item">Scallop Ceviche</div>
+                            <div class="menu-item">Artisan Charcuterie Board</div>
+                            <div class="menu-course">Main Course (Choose 4)</div>
+                            <div class="menu-item">Angus Ribeye Steak</div>
+                            <div class="menu-item">Lobster Thermidor</div>
+                            <div class="menu-item">Duck Confit</div>
+                            <div class="menu-course">Dessert Station</div>
+                            <div class="menu-item">Macarons, Tarts & Gelato</div>
+                            <div class="menu-course">Includes</div>
+                            <div class="menu-item">Wine Toast & Premium Bar</div>
+                        </div>
+                        <a href="booking.html" class="btn btn-secondary" style="margin-top: auto;">Select Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A LA CARTE SECTION -->
+        <section class="section feature-section alt">
+            <div class="container feature-grid">
+                <div class="feature-copy">
+                    <p class="eyebrow">Custom Additions</p>
+                    <h2>A La Carte & Party Trays</h2>
+                    <p>Looking for something specific? We offer an extensive A La Carte menu featuring our signature dishes, premium carving stations, and party trays perfect for any size gathering.</p>
+                    <a href="alacarte.html" class="btn btn-primary" style="margin-top: 1rem;">View A La Carte Menu</a>
+                </div>
+                <div class="feature-image">
+                    <img src="alacarte-preview.jpg" alt="A la carte food trays" style="border-radius: 200px 200px 0 0; aspect-ratio: 4/3; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-box">
+                    <h3>Schedule a Food Tasting</h3>
+                    <p>Experience the quality and flavors of our menus firsthand before deciding on your event package.</p>
+                    <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>🍽️ Donia's Events</h4>
+                <p>Creating beautiful events with elegant styling and delicious catering since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu-packages.html">Menu & Packages</a></li>
+                    <li><a href="styling.html">Styling</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donia's Events. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
