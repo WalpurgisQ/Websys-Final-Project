@@ -49,4 +49,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
         revealItems.forEach(item => revealObserver.observe(item));
     }
+
+    // ===== GALLERY LIGHTBOX MODAL =====
+    const modal = document.getElementById("gallery-modal");
+    const modalContainer = document.getElementById("modal-image-container");
+    const modalCaption = document.getElementById("modal-caption");
+    
+    if (modal && galleryCards.length) {
+        const closeBtn = document.querySelector(".modal-close");
+        
+        galleryCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const photoDiv = this.querySelector('.gallery-photo');
+                const label = this.querySelector('.gallery-label').innerText;
+                
+                // Replicate the background of the thumbnail into the modal window
+                const computedStyle = window.getComputedStyle(photoDiv);
+                modalContainer.style.background = computedStyle.background;
+                modalContainer.style.backgroundSize = "cover";
+                modalContainer.style.backgroundPosition = "center";
+                
+                modalCaption.innerText = label;
+                modal.style.display = 'block';
+                
+                // Tiny delay to allow CSS transitions (fade-in) to work properly
+                setTimeout(() => modal.classList.add('show'), 10);
+            });
+        });
+        
+        // Close when clicking the 'X' or anywhere on the background
+        window.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === closeBtn) {
+                modal.classList.remove('show');
+                setTimeout(() => modal.style.display = 'none', 300);
+            }
+        });
+    }
 });
