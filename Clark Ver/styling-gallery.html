@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Gallery - Donia's Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="donias-logo.png" alt="Donia's Events logo" class="logo-img">
+                <span>Donia's Events</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="styling.html" class="active">Styling</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section page-intro">
+            <div class="container">
+                <div class="page-header text-center">
+                    <p class="eyebrow">Styling Gallery</p>
+                    <h2>Immersive Event Styling Inspiration</h2>
+                    <p>Browse elegant setups for weddings, debuts, corporate events, garden parties, rustic gatherings, and luxury celebrations.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- GALLERY FILTER BUTTONS -->
+                <div class="gallery-tabs">
+                    <button type="button" class="filter-button active" data-filter="all">All</button>
+                    <button type="button" class="filter-button" data-filter="Wedding">Wedding</button>
+                    <button type="button" class="filter-button" data-filter="Debut">Debut</button>
+                    <button type="button" class="filter-button" data-filter="Corporate">Corporate</button>
+                    <button type="button" class="filter-button" data-filter="Garden">Garden</button>
+                    <button type="button" class="filter-button" data-filter="Rustic">Rustic</button>
+                    <button type="button" class="filter-button" data-filter="Elegant">Elegant</button>
+                </div>
+
+                <!-- STYLING GALLERY IMAGES -->
+                <div class="gallery-grid">
+                    <article class="gallery-card wide reveal-item" data-category="Wedding">
+                        <div class="gallery-photo swatch-1"></div>
+                        <div class="gallery-label">Wedding Tablescape</div>
+                    </article>
+                    <article class="gallery-card tall reveal-item" data-category="Debut">
+                        <div class="gallery-photo swatch-2"></div>
+                        <div class="gallery-label">Debut Floral Display</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Corporate">
+                        <div class="gallery-photo swatch-3"></div>
+                        <div class="gallery-label">Corporate Reception</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Garden">
+                        <div class="gallery-photo swatch-4"></div>
+                        <div class="gallery-label">Garden Lounge</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Rustic">
+                        <div class="gallery-photo swatch-5"></div>
+                        <div class="gallery-label">Rustic Gatherings</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Elegant">
+                        <div class="gallery-photo swatch-6"></div>
+                        <div class="gallery-label">Elegant Evening</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Wedding">
+                        <div class="gallery-photo swatch-7"></div>
+                        <div class="gallery-label">Arched Ceremony</div>
+                    </article>
+                    <article class="gallery-card reveal-item" data-category="Corporate">
+                        <div class="gallery-photo swatch-8"></div>
+                        <div class="gallery-label">Executive Table</div>
+                    </article>
+                </div>
+
+                <div class="gallery-note">
+                    <p>Want a custom mood board for your event? Choose a package or reach out to our team for a tailored proposal.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>🍽️ Donia's Events</h4>
+                <p>Creating beautiful events with elegant styling and delicious catering since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Catering</a></li>
+                    <li><a href="styling.html">Styling</a></li>
+                    <li><a href="styling-packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 hello@donias.com</p>
+                <p>📍 Your City, State</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donia's Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
